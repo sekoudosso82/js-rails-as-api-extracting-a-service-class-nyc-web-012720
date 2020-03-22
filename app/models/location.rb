@@ -1,2 +1,6 @@
 class Location < ApplicationRecord
-end
+    has_many :sightings
+    has_many :birds, through: :sightings
+  end
+
+  
